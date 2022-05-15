@@ -12,34 +12,37 @@
 <body>
     <div class="container">
         <div class="slider">
-            <div class="slide"><img src="" alt="slideImage"></div>
-            <div class="slide"><img src="" alt="slideImage"></div>
-            <div class="slide"><img src="" alt="slideImage"></div>
-            <div class="slide"><img src="" alt="slideImage"></div>
-
             <input checked type="radio" name="gif" id="gif1">
             <input         type="radio" name="gif" id="gif2">
             <input         type="radio" name="gif" id="gif3">
             <input         type="radio" name="gif" id="gif4">
+
+            <div class="slide active"><img src="./img/gif2.gif" alt="slideImage"></div>
+            <div class="slide"><img src="./img/gif3.gif" alt="slideImage"></div>
+            <div class="slide"><img src="./img/gif4.gif" alt="slideImage"></div>
+            <div class="slide"><img src="./img/gif5.gif" alt="slideImage"></div>
         </div>
 
         <div class="wrapper_controls">
             <div class="description">
-                <div class="slide_description"><span>it's me, when i will to be IT-specialist </span></div>
-                <div class="slide_description"><span>I will meeting with girlfriends, so many</span></div>
-                <div class="slide_description"><span>I talked my friends about it</span></div>
-                <div class="slide_description"><span>expectation ---> reality</span></div>
-    
-                <input checked type="radio" name="gif" id="gif1">
-                <input         type="radio" name="gif" id="gif2">
-                <input         type="radio" name="gif" id="gif3">
-                <input         type="radio" name="gif" id="gif4">
+                <div class="description_container">
+                    <input checked type="radio" name="gif" id="gif1">
+                    <input         type="radio" name="gif" id="gif2">
+                    <input         type="radio" name="gif" id="gif3">
+                    <input         type="radio" name="gif" id="gif4">
+
+                    <div class="slide_description active">it's me, when i will to be IT-specialist</div>
+                    <div class="slide_description">I will meeting with girlfriends, so many</div>
+                    <div class="slide_description">I talked my friends about it</div>
+                    <div class="slide_description">expectation ---> reality</div>
+                </div>
             </div>
             <div class="controls_slide">
-                <label class="controls_button" for="gif1"></label>
-                <label class="controls_button" for="gif2"></label>
-                <label class="controls_button" for="gif3"></label>
-                <label class="controls_button" for="gif4"></label>
+                <label class="controls_button" for="gif1"><div class="button"></div></label>
+                <label class="controls_button" for="gif2"><div class="button"></div></label>
+                <label class="controls_button" for="gif3"><div class="button"></div></label>
+                <label class="controls_button" for="gif4"><div class="button"></div></label>
+
             </div>
         </div>
     </div>
