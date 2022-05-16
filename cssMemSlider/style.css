@@ -1,0 +1,202 @@
+html{
+    font-size: 62.5%;
+}
+body{
+    background-color: #000;
+    
+}
+header{
+    width: 100%;
+    height: 4vh;
+}
+footer{
+    width: 100%;
+    height: 4vh;
+}
+.wrap{
+    max-width: 1980px;
+    margin: 0 auto;
+}
+.container {
+    
+    height: 90vh;
+    border: 0.1rem solid grey;
+    box-shadow: 0 0 2rem 0.5rem grey;
+    margin: 0 4rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5%;
+    border-radius: 1%;
+}
+.slider {
+    width: 400%;
+    height: 72vh;
+    display: flex;
+    border: 0.1rem solid grey;
+}
+.slide {
+    width: 25%;
+}
+.slide img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.wrapper_controls {
+    display: flex;
+    
+    align-items: center;
+    background-color: #000;
+    color: #FFF;
+}
+.description {
+    width: 75%;
+    display:inline;
+    overflow: hidden;
+}
+.description_container{
+    width: 400%;
+    height: 100%;
+    display: flex;
+}
+.slide_description {
+    width: 25%;
+    font-size: 4.5rem;
+
+}
+.controls_slide {
+    width: 25%;
+    height: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.controls_button{
+    width: 20%;
+    height: 100%;
+    padding-left: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.button{
+    padding: 20%;
+    border-radius: 100%;
+    box-shadow: 0 0 0.5rem 0.2rem #FFF;
+    background-color: #FFF;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+.controls_button:hover .button {
+    box-shadow: 0 0 0.5rem 0.5rem #FFF;
+    transform: scale(1.2);
+}
+.controls_button:active .button{
+    transform: scale(0.6);
+}
+input[name = "gif"] {
+    display: none;
+}
+
+#gif1:checked ~ .slider .active{
+    margin-left: 0;
+    transition: all 0.2s ease-in-out;
+}
+#gif2:checked ~ .slider .active{
+    margin-left: -25%;
+    transition: all 0.2s ease-in-out;
+}
+#gif3:checked ~ .slider .active{
+    margin-left: -50%;
+    transition: all 0.2s ease-in-out;
+}
+#gif4:checked ~ .slider .active{
+    margin-left: -75%;
+    transition: all 0.2s ease-in-out;
+}
+#gif1:checked ~ .wrapper_controls .description .phrase{
+    margin-left: 0;
+    transition: all 0.2s ease-in-out;
+}
+#gif2:checked ~ .wrapper_controls .description .phrase{
+    margin-left: -100%;
+    transition: all 0.2s ease-in-out;
+}
+#gif3:checked ~ .wrapper_controls .description .phrase{
+    margin-left: -200%;
+    transition: all 0.2s ease-in-out;
+}
+#gif4:checked ~ .wrapper_controls .description .phrase{
+    margin-left: -300%;
+    transition: all 0.2s ease-in-out;
+}
+#gif1:checked ~ .wrapper_controls .controls_slide .controls_button .btn1{
+    background-color: #000;
+    box-shadow: 0 0 0.4rem 0.2rem inset #FFF,0 0 0.5rem 0.5rem grey
+}
+#gif2:checked ~ .wrapper_controls .controls_slide .controls_button .btn2{
+    background-color: #000;
+    box-shadow: 0 0 0.4rem 0.2rem inset #FFF,0 0 0.5rem 0.5rem grey
+}
+#gif3:checked ~ .wrapper_controls .controls_slide .controls_button .btn3{
+    background-color: #000;
+    box-shadow: 0 0 0.4rem 0.2rem inset #FFF,0 0 0.5rem 0.5rem grey
+}
+#gif4:checked ~ .wrapper_controls .controls_slide .controls_button .btn4{
+    background-color: #000;
+    box-shadow: 0 0 0.4rem 0.2rem inset #FFF,0 0 0.5rem 0.5rem grey
+}
+@media(max-width:1200px){
+    .container {
+        box-shadow: 0 0 1.2rem 0.2rem grey;
+    }
+    .slider {
+        height: 63vh;
+    }
+    .wrapper_controls {
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    row-gap:4vh;
+    }
+    .description {
+        width: 100%;
+    }
+    .controls_slide {
+        width: 40%;
+
+    }
+}
+@media(max-width:450px){
+    .container {
+        box-shadow: 0 0 0.5rem 0.1rem grey;
+    }
+    .slider {
+        height: 54vh;
+    }
+    .slide_description {
+        width: 100%;
+        font-size: 2.7rem;
+    }
+    .controls_slide {
+        width: 50%;
+
+    }
+    #gif1:checked ~ .wrapper_controls .controls_slide .controls_button .btn1{
+        background-color: #000;
+        box-shadow: 0 0 0.2rem 0.1rem inset #FFF,0 0 0.5rem 0.5rem grey
+    }
+    #gif2:checked ~ .wrapper_controls .controls_slide .controls_button .btn2{
+        background-color: #000;
+        box-shadow: 0 0 0.2rem 0.1rem inset #FFF,0 0 0.5rem 0.5rem grey
+    }
+    #gif3:checked ~ .wrapper_controls .controls_slide .controls_button .btn3{
+        background-color: #000;
+        box-shadow: 0 0 0.2rem 0.1rem inset #FFF,0 0 0.5rem 0.5rem grey
+    }
+    #gif4:checked ~ .wrapper_controls .controls_slide .controls_button .btn4{
+        background-color: #000;
+        box-shadow: 0 0 0.2rem 0.1rem inset #FFF,0 0 0.5rem 0.5rem grey
+    }
+}
