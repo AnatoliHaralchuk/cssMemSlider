@@ -1,3 +1,6 @@
+html{
+    font-size: 62.5%;
+}
 body{
     background-color: #000;
     
@@ -17,9 +20,9 @@ footer{
 .container {
     
     height: 90vh;
-    border: 1px solid grey;
-    box-shadow: 0px 0px 20px 5px grey;
-    margin: 0 40px;
+    border: 0.1rem solid grey;
+    box-shadow: 0 0 2rem 0.5rem grey;
+    margin: 0 4rem;
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -30,7 +33,7 @@ footer{
     width: 400%;
     height: 72vh;
     display: flex;
-    border: 1px solid grey;
+    border: 0.1rem solid grey;
 }
 .slide {
     width: 25%;
@@ -42,6 +45,7 @@ footer{
 }
 .wrapper_controls {
     display: flex;
+    
     align-items: center;
     background-color: #000;
     color: #FFF;
@@ -58,19 +62,20 @@ footer{
 }
 .slide_description {
     width: 25%;
-    font-size: 3rem;
+    font-size: 4.5rem;
 
 }
 .controls_slide {
     width: 25%;
+    height: 8rem;
     display: flex;
     align-items: center;
     justify-content: flex-end;
 }
 .controls_button{
     width: 20%;
-    height: 20%;
-    padding-left: 15px;
+    height: 100%;
+    padding-left: 1.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -79,13 +84,13 @@ footer{
 .button{
     padding: 20%;
     border-radius: 100%;
-    box-shadow: 0px 0px 5px 2px #FFF;
+    box-shadow: 0 0 0.5rem 0.2rem #FFF;
     background-color: #FFF;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
 }
 .controls_button:hover .button {
-    box-shadow: 0px 0px 5px 5px #FFF;
+    box-shadow: 0 0 0.5rem 0.5rem #FFF;
     transform: scale(1.2);
 }
 .controls_button:active .button{
@@ -129,23 +134,23 @@ input[name = "gif"] {
 }
 #gif1:checked ~ .wrapper_controls .controls_slide .controls_button .btn1{
     background-color: #000;
-    box-shadow: 0px 0px 4px 2px inset #FFF,0px 0px 5px 5px grey
+    box-shadow: 0 0 0.4rem 0.2rem inset #FFF,0 0 0.5rem 0.5rem grey
 }
 #gif2:checked ~ .wrapper_controls .controls_slide .controls_button .btn2{
     background-color: #000;
-    box-shadow: 0px 0px 4px 2px inset #FFF,0px 0px 5px 5px grey
+    box-shadow: 0 0 0.4rem 0.2rem inset #FFF,0 0 0.5rem 0.5rem grey
 }
 #gif3:checked ~ .wrapper_controls .controls_slide .controls_button .btn3{
     background-color: #000;
-    box-shadow: 0px 0px 4px 2px inset #FFF,0px 0px 5px 5px grey
+    box-shadow: 0 0 0.4rem 0.2rem inset #FFF,0 0 0.5rem 0.5rem grey
 }
 #gif4:checked ~ .wrapper_controls .controls_slide .controls_button .btn4{
     background-color: #000;
-    box-shadow: 0px 0px 4px 3px inset #FFF,0px 0px 5px 5px grey
+    box-shadow: 0 0 0.4rem 0.2rem inset #FFF,0 0 0.5rem 0.5rem grey
 }
 @media(max-width:1200px){
     .container {
-        box-shadow: 0px 0px 12px 2px grey;
+        box-shadow: 0 0 1.2rem 0.2rem grey;
     }
     .slider {
         height: 63vh;
@@ -165,14 +170,14 @@ input[name = "gif"] {
 }
 @media(max-width:450px){
     .container {
-        box-shadow: 0px 0px 5px 1px grey;
+        box-shadow: 0 0 0.5rem 0.1rem grey;
     }
     .slider {
         height: 54vh;
     }
     .slide_description {
         width: 100%;
-        font-size: 1.8rem;
+        font-size: 2.7rem;
     }
     .controls_slide {
         width: 50%;
@@ -180,18 +185,18 @@ input[name = "gif"] {
     }
     #gif1:checked ~ .wrapper_controls .controls_slide .controls_button .btn1{
         background-color: #000;
-        box-shadow: 0px 0px 2px 1px inset #FFF,0px 0px 5px 5px grey
+        box-shadow: 0 0 0.2rem 0.1rem inset #FFF,0 0 0.5rem 0.5rem grey
     }
     #gif2:checked ~ .wrapper_controls .controls_slide .controls_button .btn2{
         background-color: #000;
-        box-shadow: 0px 0px 2px 1px inset #FFF,0px 0px 5px 5px grey
+        box-shadow: 0 0 0.2rem 0.1rem inset #FFF,0 0 0.5rem 0.5rem grey
     }
     #gif3:checked ~ .wrapper_controls .controls_slide .controls_button .btn3{
         background-color: #000;
-        box-shadow: 0px 0px 2px 1px inset #FFF,0px 0px 5px 5px grey
+        box-shadow: 0 0 0.2rem 0.1rem inset #FFF,0 0 0.5rem 0.5rem grey
     }
     #gif4:checked ~ .wrapper_controls .controls_slide .controls_button .btn4{
         background-color: #000;
-        box-shadow: 0px 0px 2px 1px inset #FFF,0px 0px 5px 5px grey
+        box-shadow: 0 0 0.2rem 0.1rem inset #FFF,0 0 0.5rem 0.5rem grey
     }
 }
